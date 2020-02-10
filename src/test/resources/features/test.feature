@@ -1,2 +1,4 @@
 Feature: test
-  Scenario: fixing conflicts
+  Scenario: fixing? conflicts!!!
+    Scenario: You too
+
