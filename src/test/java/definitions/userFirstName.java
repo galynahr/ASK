@@ -59,7 +59,7 @@ public class userFirstName {
     }
 
     @Then("I wait for loading")
-    public void iWaitForLoading() {
-
+    public void iWaitForLoading() throws Exception {
+    Thread.sleep(3000);
     }
 }
