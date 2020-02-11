@@ -52,4 +52,14 @@ public class userFirstName {
     public void iClickOnRegisterMeButton() {
         getDriver().findElement(By.xpath("//button[@type='submit']")).click();
     }
+
+    @Then("object with xpath {string} must be present")
+    public void objectWithXpathMustBePresent(String xpath) {
+        getDriver().findElement(By.xpath(xpath)).isDisplayed();
+    }
+
+    @Then("I wait for loading")
+    public void iWaitForLoading() {
+
+    }
 }

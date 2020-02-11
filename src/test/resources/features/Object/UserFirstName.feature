@@ -7,4 +7,6 @@ Feature: User - First Name
     And I type group "p100"
     And I type password "12345"
     And I type confirm password "12345"
-    Then I click on Register Me button
+    When I click on Register Me button
+    Then I wait for loading
+    Then object with xpath "//h4[contains(text(),'You have been Registered.')]" must be present
