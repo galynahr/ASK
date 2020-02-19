@@ -48,9 +48,16 @@ public class multiChoiceQDef {
 
     @Then("{string} message appears")
     public void messageAppears(String message) throws InterruptedException {
-        WebElement element = getDriver().findElement(By.xpath("//*[contains(text(), message)]"));
+        WebElement element = getDriver().findElement(By.xpath("//*[contains(text(), '"+message+"')]"));
+        assertThat(element.isDisplayed()).isTrue();
         Thread.sleep(3000);
     }
+    /*
+    @Then("{string} message appears")
+public void messageAppears(String message) {
+    WebElement element = getDriver().findElement(By.xpath("//*[contains(text(),'"+message+"')]"));
+    assertThat(element.isDisplayed()).isTrue();
+     */
 
     @And("I click Quizzes menu")
     public void iClickQuizzesMenu() throws InterruptedException {

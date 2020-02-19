@@ -115,7 +115,7 @@ Feature: Create and Edit multiple-choice question
     And I find and open the quiz
     And I Preview the quiz
     Then I verify if quiz has one question with correct text and a text field for answer
-    And I wait for 3 sec
+
 
 
 
